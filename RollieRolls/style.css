@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --primaryColor: #f5e4dd;
+    --SecondaryColor: #532e3f;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background: var(--primaryColor);
+}
+
+section {
+    margin-top: 1.2rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--SecondaryColor);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    background: var(--primaryColor);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+}
+
+section .video {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--SecondaryColor);
+}
+
+.nav-items {
+    display: none;
+}
+
+.hero {
+    background: url(./Fotos/DSC03714.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero h1 {
+    color: var(--SecondaryColor);
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.productos {
+    text-align: center;
+    overflow: hidden;
+}
+
+.productos .rolls {
+    margin-bottom: 0.5rem;
+}
+
+.productos img {
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    z-index: 1000;
+}
+
+.productos a {
+    color: var(--primaryColor);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: var(--SecondaryColor);
+    border-radius: 800px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+ }
+
+ input, textarea {
+     background: #e6c4b7;
+     border: none;
+     color: var(--SecondaryColor);
+     margin: 0.8rem auto;
+     font-size: 1em;
+     font-weight: 600;
+     width: 80vw;
+     text-align: center;
+     border-radius: 5px;
+     padding: 0.5rem;
+ }
+
+
+.boton {
+    border: none;
+    border-radius: 5px;
+    background: var(--SecondaryColor);
+    color: var(--primaryColor);
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.6rem;
+    width: 40vw;
+    position: relative;
+    left: 6rem;
+    transition: 0.5s ease-in;
+}
+
+.boton:hover {
+    background: var(--primaryColor);
+    color: var(--SecondaryColor);
+}
+
+.encuentranos {
+    text-align: center;
+}
+
+.encuentranos .tablaRoli {
+    width: 100%;
+    height: 80vh;
+}
+
+.otrosRoli {
+    display: none;
+}
+
+.encuentranos .buenRollo {
+    display: none;
+}
+
+.encuentranos p {
+    font-size: 1.2rem;
+    color: var(--SecondaryColor);
+    font-weight: 400;
+}
+
+.encuentranos p a {
+    text-decoration: none;
+    background: var(--SecondaryColor);
+    color: var(--primaryColor);
+    padding: 0.3rem;
+    line-height: 2rem;
+    margin: 0 0.2rem;
+}
+
+.redes h2 {
+    margin-top: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+.redes p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--SecondaryColor);
+}
+.redes p span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.redes .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem auto;
+}
+
+.redes .botones a i {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--SecondaryColor);
+    padding: 0 1.3rem;
+    transition: 0.4s ease-in;
+}
+
+.redes .botones a i:hover {
+    font-size: 2.4rem;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+}
+
+.footer svg {
+    height: 100%;
+    width: 100%;
+}
+
+.footer div {
+    position: absolute;
+    z-index: 12;
+    bottom: 10%;
+    left: 5%;
+    color: var(--primaryColor);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+/*Galeria.html*/
+section .videoGaleria {
+    width: 100%;
+}
+
+.fotosRolis {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5rem auto;
+}
+
+.fotosRolis img {
+    width: 100%;
+    height: 96%;
+    opacity: 0.7;
+    transition: 0.5s ease-in;
+}
+
+.fotosRolis img:hover {
+    opacity: 1;
+}
+
+.footerGaleria {
+    margin-top: 3rem;
+}
+/*Galeria.html*/
+
+@media (min-width: 400px) {
+    .boton {
+        left: 30%;
+    }
+
+    .footer div {
+        left: 10%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 600px) {
+
+    h2 {
+        text-align: center;
+        color: var(--SecondaryColor);
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .hero h1 {
+        color: var(--SecondaryColor);
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    .encuentranos p {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .encuentranos p a {
+        padding: 0.5rem;
+        display: inline-block;
+    }
+
+    .redes p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--SecondaryColor);
+    }
+    .redes p span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--SecondaryColor);
+    }
+
+    .redes .botones a i {
+        font-size: 2.2rem;
+        font-weight: 800;
+        padding: 0 1.5rem;
+        transition: 0.4s ease-in;
+    }
+    
+    .redes .botones a i:hover {
+        font-size: 2.8rem;
+    }
+    
+    .footer div {
+        left: 20%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .hero {
+        margin-top: -1rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: 900;
+        margin-bottom: -0.8rem;
+        line-height: 1.2;
+    }
+
+    .contacto iframe {
+        width: 100%;
+    }
+
+    .footer div {
+        left: 20%;
+        font-size: 1.3rem;
+        font-weight: 600;
+        bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    header {
+        position: relative;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav .nav-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 5rem;
+    }
+
+    .nav .nav-items li {
+        list-style: none;
+    }
+
+    .nav .nav-items li a {
+        display: inline-block;
+        text-decoration: none;
+        position: absolute;
+        top: 2.5%;
+        color: var(--primaryColor);
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        transition: 0.7s ease-in;
+    }
+
+    .nav .nav-items li a:hover {
+        background: var(--primaryColor);
+        color: var(--SecondaryColor);
+    }
+    
+    .hero h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: -0.8rem;
+        line-height: 1.2;
+    }
+
+    .productos h2 {
+        font-size: 2.4rem;
+        font-weight: 800;
+    }
+
+    .encuentranos {
+        margin-top: 3rem;
+    }
+    
+    .encuentranos .tablaRoli {
+        width: 84%;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 900px) {
+    
+    .productos a {
+        padding: 1rem;
+    }
+
+    .encuentranos .tablaRoli {
+        width: 80%;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .nav .nav-items li a {
+        font-size: 1.8rem;
+    }
+
+    .hero h1 {
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .productos a {
+        padding: 1.5rem;
+    }
+
+    .footer div {
+        left: 25%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .nav .nav-items li a {
+        font-size: 2rem;
+    }
+    .hero h1 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .productos h2 {
+        font-size: 3rem;
+    }
+
+    .productos .rolls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .productos .rolls img {
+        transition: 0.5s ease-in;
+        overflow: hidden;
+    }
+
+    .productos .rolls img:hover {
+        filter: saturate(130%);
+    }
+
+
+    .productos a {
+        font-size: 2rem;
+        transition: 0.3s ease-in;
+    }
+
+    .productos :hover {
+        background: var(--primaryColor);
+        color: var(--SecondaryColor);
+    }
+
+    input, textarea {
+        width: 70vw;
+    }
+
+    .encuentranos {
+        margin-bottom: 3rem;
+    }
+
+    .encuentranos .tablaRoli {
+        width: 66%;
+        height: 60vh;
+        transition: 1s ease-in;
+        margin-bottom: 1rem;
+    }
+
+    .redes .otrosRoli {
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .redes .otrosRoli img {
+        width: 100%;
+        height: 90%;
+        transition: 0.5s ease-in;
+        cursor: pointer;
+    }
+
+    .redes .otrosRoli img:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .footer div {
+        left: 30%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        bottom: 0.5rem;
+    }
+
+    .redes p {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .redes p span {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .redes .botones {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    
+    .hero h1 {
+        font-size: 8rem;
+        margin-bottom: 20rem;
+    }
+
+    .productos h2 {
+        font-size: 4rem;
+    }
+
+    .contacto h2 {
+        font-size: 3rem;
+        margin-top: 3.5rem;
+    }
+
+    input, textarea {
+        width: 60vw;
+    }
+
+    .encuentranos .tablaRoli {
+        width: 60%;
+        height: 50%;
+    }
+
+    .redes .botones a i {
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 0 1.5rem;
+        transition: 0.4s ease-in;
+    }
+
+    .redes h2 {
+        font-size: 3rem;
+    }
+    
+    .redes .botones a i:hover {
+        font-size: 4rem;
+    }
+
+    /*Galeria.html*/
+.fotosRolis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.fotosRolis img {
+    width: 100%;
+    height: 100%;
+}
+/*Galeria.html*/
+}
